@@ -4,6 +4,7 @@
 	<title></title>
 	<!--<link rel="shortcut icon" href="images/favicon.ico" />-->
 	<link rel="stylesheet" href="./css/bootstrap-flatly.css">
+	<link rel="stylesheet" href="./css/navbar-color.css">
 	<link rel="stylesheet" href="./css/animate.css">
 	<link rel="stylesheet" href="./css/font-awesome.css">
 	<link rel="stylesheet" href="./css/owl-carousel.css">
@@ -14,8 +15,6 @@
 
 	<style>
 
-body { margin-top: 60px; }
-
 	#owl-testimonials .item {
 		background: #FFF;
 		padding: 1vw;
@@ -23,21 +22,16 @@ body { margin-top: 60px; }
 	}
 	#owl-testimonials .item h1 { color: #000; }
 
-	html, body { background-color: #FFFFFF; }
-	#thecompetition {	
-		background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
-		url("imgs/mountain.jpg") no-repeat fixed top;
-	}
-	#contactus {	
-		background: linear-gradient(rgba(255, 0, 255, 0.45), rgba(255, 0, 255, 0.45)),
-		url("imgs/city.jpg") no-repeat fixed bottom;
-	}
-
 	</style>
 </head>
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<!-- Design inspired by
+		Zerif Pro Wordpress Theme
+		Photon HTML 5 Up Theme
+	-->
+
+	<div class="navbar navbar-default navbar-fixed-top" id="navbar" style="visibility:hidden;">
 		<div class="container">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">SALL Champs</a>
@@ -49,117 +43,160 @@ body { margin-top: 60px; }
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-main">
 				<ul class="nav navbar-nav">
-					<li><a href="#thecompetition">Competition</a></li>
-					<li><a href="#whoweare">About Us</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contactus">Contact</a></li>
+					<li id="thecompetition-nav"><a href="#thecompetition">Competition</a></li>
+					<li id="whoweare-nav"><a href="#whoweare">About Us</a></li>
+					<li id="testimonials-nav"><a href="#testimonials">Testimonials</a></li>
+					<li id="contactus-nav"><a href="#contactus">Contact</a></li>
 				</ul>
 				
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid" style="padding:5vw;" id="thecompetition">
-		<h1 class="text-center white">The Competition</h1><br><br>
-		<div class="row-fluid">
-			<div class="col-sm-4 text-center">
-				<span class="fa-stack fa-3x">
-					<i class="fa fa-circle fa-stack-2x white"></i>
-					<i class="fa fa-circle-thin fa-stack-2x teal"></i>
-					<span class="fa-stack-1x green">1</span>
-				</span>
-				<h3 class="white">Build</h3>
-				<h4 class="white" style="font-weight:normal">Build your robot using LEGO<sup>&reg;</sup> MINDSTORMS<sup>&reg;</sup> parts.</h4>
-			</div>
-			<div class="col-sm-4 text-center">
-				<span class="fa-stack fa-3x">
-					<i class="fa fa-circle fa-stack-2x white"></i>
-					<i class="fa fa-circle-thin fa-stack-2x teal"></i>
-					<span class="fa-stack-1x green">2</span>
-				</span>
-				<h3 class="white">Program</h3>
-				<h4 class="white" style="font-weight:normal">Program your robot live at the competition with your team.</h4>
-			</div>
-			<div class="col-sm-4 text-center">
-				<span class="fa-stack fa-3x">
-					<i class="fa fa-circle fa-stack-2x white"></i>
-					<i class="fa fa-circle-thin fa-stack-2x teal"></i>
-					<span class="fa-stack-1x green">3</span>
-				</span>
-				<h3 class="white">Compete</h3>
-				<h4 class="white" style="font-weight:normal">Compete against other teams to be crowned winner.</h4>
-			</div>
+	<div id="opener" style="visibility:hidden;">
+		<div style="visibility:hidden;">
+			<h1 class="text-center white" style="font-size:4em">STEM Aspiring Leaders League</h1>
+			<h3 class="text-center white">A LEGO<sup>&reg;</sup> MINDSTORMS<sup>&reg;</sup> Competition</h3>
 		</div>
 	</div>
 
-	<div class="container-fluid" style="background-color:#282828;padding:5vw;" id="whoweare">
-		<div class="row" id="whoweare-heading" style="visibility:hidden;">
-			<h1 class="text-center white">Who We Are</h1><hr>
-			<h4 class="text-center silver">Providing a platform for curious minds and competitive mindsets.</h4>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-sm-4 text-right" id="whoweare-left" style="visibility:hidden;">
-				<h1 class="silver"><i>Hundreds of Robotics Schools and thousands of teams; but not enough platforms to demonstrate their work. SALL Champs provides a platform to those who believe in learning and proving themselves.</i></h1>
-			</div>
-			<div class="col-md-6 col-sm-4 white" id="whoweare-content" style="visibility:hidden;padding:2vw 5vw;">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p>
-			</div>
-			<div class="col-md-3 col-sm-4 text-left" id="whoweare-right" style="visibility:hidden;">
-				<h2><div class="row">
-					<div class="col-xs-3 text-center aqua"><i class="fa fa-lightbulb-o fa-2x"></i></div>
-					<div class="col-xs-9 white">Creativity</div>
-				</div></h2><br>
-				<h2><div class="row">
-					<div class="col-xs-3 text-center fuchsia"><i class="fa fa-user-plus fa-2x"></i></div>
-					<div class="col-xs-9 white">Collaboration</div>
-				</div></h2><br>
-				<h2><div class="row">
-					<div class="col-xs-3 text-center yellow"><i class="fa fa-bolt fa-2x"></i></div>
-					<div class="col-xs-9 white">Speed</div>
-				</div></h2><br>
-				<h2><div class="row">
-					<div class="col-xs-3 text-center red"><i class="fa fa-users fa-2x"></i></div>
-					<div class="col-xs-9 white">Competition</div>
-				</div></h2><br>
-				<h2><div class="row">
-					<div class="col-xs-3 text-center purple"><i class="fa fa-hourglass-end fa-2x"></i></div>
-					<div class="col-xs-9 white">Pressure</div>
-				</div></h2><br>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid" style="background-color:#FFCC00;padding:5vw;" id="testimonials">
-		<h1 class="text-center" style="color:#FFF">Testimonials</h1>
-		<div id="owl-testimonials" class="owl-carousel owl-theme">
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-			<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
-		</div>
-	</div>
-
-	<div class="container-fluid" style="padding:5vw;" id="contactus">
-		<h1 class="text-center white">Get in Touch</h1><br><br>
-		<div class="container">
-			<form>
+	<div class="container-fluid" style="padding:10vh 0;background-color:#CCFF99;">
+		<div class="container text-center" style="visibility:hidden;" id="subscribe">
+			<h3>&quot;Tell me, I will forget. Show me, I may remember. Involve me, and I will understand.&quot;</h3>
+			<form id="subscribe-form">
 				<div class="row">
-					<div class="col-lg-4">
-						<div class="form-group"><input type="text" class="form-control" placeholder="Your Name"></div>
+					<div class="col-lg-10">
+						<div class="form-group">
+							<input type="email" class="form-control" id="subscribe-email" placeholder="Subscribe to our email alerts">
+						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="form-group"><input type="text" class="form-control" placeholder="Your Email"></div>
-					</div>
-					<div class="col-lg-4">
-						<div class="form-group"><input type="text" class="form-control" placeholder="Subject"></div>
+					<div class="col-lg-2">
+						<button type="submit" class="btn btn-success"><i class="fa fa-rss"></i></i>&nbsp;&nbsp;Subscribe</button>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12"><textarea class="form-control input-lg" rows="5" placeholder="Message" style="resize: none;"></textarea></div>
+					<h4 class="black" id="subscribe-errors"></h4>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding:10vh 0;" id="thecompetition">
+		<div class="container">
+			<h1 class="text-center white" id="thecompetition-header" style="visibility:hidden;">The Competition</h1><br><br>
+			<div class="row-fluid">
+				<div class="col-sm-4 text-center" id="thecompetition1" style="visibility:hidden;">
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x white"></i>
+						<i class="fa fa-circle-thin fa-stack-2x teal"></i>
+						<span class="fa-stack-1x green">1</span>
+					</span>
+					<h3 class="white">Build</h3>
+					<h4 class="white" style="font-weight:normal">Build your robot using LEGO<sup>&reg;</sup> MINDSTORMS<sup>&reg;</sup> parts.</h4>
+				</div>
+				<div class="col-sm-4 text-center" id="thecompetition2" style="visibility:hidden;">
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x white"></i>
+						<i class="fa fa-circle-thin fa-stack-2x teal"></i>
+						<span class="fa-stack-1x green">2</span>
+					</span>
+					<h3 class="white">Program</h3>
+					<h4 class="white" style="font-weight:normal">Program your robot live at the competition with your team.</h4>
+				</div>
+				<div class="col-sm-4 text-center" id="thecompetition3" style="visibility:hidden;">
+					<span class="fa-stack fa-3x">
+						<i class="fa fa-circle fa-stack-2x white"></i>
+						<i class="fa fa-circle-thin fa-stack-2x teal"></i>
+						<span class="fa-stack-1x green">3</span>
+					</span>
+					<h3 class="white">Compete</h3>
+					<h4 class="white" style="font-weight:normal">Compete against other teams to be crowned winner.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="background-color:#282828;padding:10vh 0;" id="whoweare">
+		<div class="container">
+			<div class="row" id="whoweare-heading" style="visibility:hidden;">
+				<h1 class="text-center white">Who We Are</h1><hr>
+				<h4 class="text-center silver">Providing a platform for curious minds and competitive mindsets.</h4>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 text-right" id="whoweare-left" style="visibility:hidden;">
+					<h2 class="silver"><i>Hundreds of Robotics Schools and thousands of teams; but not enough platforms to demonstrate their work. SALL Champs provides a platform to those who believe in learning and proving themselves.</i></h2>
+				</div>
+				<div class="col-lg-6 white" id="whoweare-content" style="visibility:hidden;padding:2vw 5vw;">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.</p>
+				</div>
+				<div class="col-lg-3 text-left" id="whoweare-right" style="visibility:hidden;">
+					<h2><div class="row">
+						<div class="col-xs-3 text-center aqua"><i class="fa fa-lightbulb-o fa-1x"></i></div>
+						<div class="col-xs-9 white">Creativity</div>
+					</div></h2><br>
+					<h2><div class="row">
+						<div class="col-xs-3 text-center fuchsia"><i class="fa fa-user-plus fa-1x"></i></div>
+						<div class="col-xs-9 white">Collaboration</div>
+					</div></h2><br>
+					<h2><div class="row">
+						<div class="col-xs-3 text-center yellow"><i class="fa fa-bolt fa-1x"></i></div>
+						<div class="col-xs-9 white">Speed</div>
+					</div></h2><br>
+					<h2><div class="row">
+						<div class="col-xs-3 text-center red"><i class="fa fa-users fa-1x"></i></div>
+						<div class="col-xs-9 white">Competition</div>
+					</div></h2><br>
+					<h2><div class="row">
+						<div class="col-xs-3 text-center purple"><i class="fa fa-hourglass-end fa-1x"></i></div>
+						<div class="col-xs-9 white">Pressure</div>
+					</div></h2><br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add all of our programs this year -->
+
+	<div class="container-fluid" style="background-color:#FFCC00;padding:10vh 0;" id="testimonials">
+		<div class="container" id="testimonials-content" style="visibility:hidden;">
+			<h1 class="text-center white">Testimonials</h1>
+			<div id="owl-testimonials" class="owl-carousel owl-theme">
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+				<div class="item panel panel-default"><div class="panel-body">A Basic Panel</div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding:10vh 0;" id="contactus">
+		<h1 class="text-center white" style="visibility:hidden;" id="contact-heading">Get in Touch</h1><br><br>
+		<div class="container">
+			<form id="contact-form">
+				<div class="row" id="contact-row1" style="visibility:hidden;">
+					<div class="col-lg-4">
+						<div class="form-group"><input type="text" class="form-control" id="contact-name" placeholder="Your Name"></div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-group"><input type="email" class="form-control" id="contact-email" placeholder="Your Email"></div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-group"><input type="text" class="form-control" id="contact-subject" placeholder="Subject"></div>
+					</div>
+				</div>
+				<div class="row" id="contact-row2" style="visibility:hidden;">
+					<div class="col-xs-12"><textarea class="form-control" rows="5" id="contact-message" placeholder="Message" style="resize: none;"></textarea></div>
 				</div><br>
 				<div class="row">
+					<div class="col-xs-12">
+						<div class="alert alert-danger" id="contact-errors" style="visibility:hidden;">
+							<p class="white">&nbsp;</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="contact-row3" style="visibility:hidden;">
 					<div class="col-xs-12 text-right">
 						<button type="reset" class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i>&nbsp;Cancel</button>
 						<button type="submit" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"></i>&nbsp;Send</button>
@@ -169,38 +206,41 @@ body { margin-top: 60px; }
 		</div>
 	</div>
 
-	<div class="container-fluid" style="background-color:#282828;padding:5vw;" id="footer">
-		<div class="row text-center">
-			<div class="col-sm-3">
-				<i class="fa fa-map-marker fa-2x red"></i>
-				<h4><a href="tel:7328002122">732-800-2122</a></h4>
-			</div>
-			<div class="col-sm-3">
-				<i class="fa fa-envelope-o fa-2x blue"></i>
-				<h4><a href="https://www.google.com/maps/place/4500+New+Brunswick+Ave,+Piscataway+Township,+NJ+08854/@40.5609666,-74.4372392,17z/data=!4m2!3m1!1s0x89c3b869d79cce13:0x5dcfd91b9153160a" target="_blank">4500 New Brunswick Ave</a></h4>
-			</div>
-			<div class="col-sm-3">
-				<i class="fa fa-phone fa-2x teal"></i>
-				<h4><a href="mailto:hello@sallchamps.com">hello@sallchamps.com</a></h4>
-			</div>
-			<div class="col-sm-3">
-				<h4><a href="https://www.facebook.com/STEM-Aspiring-Leaders-League-828774630491431" target="_blank"><i class="fa fa-facebook fa-3x fuchsia"></i></a></h4>
+	<div class="container-fluid" style="background-color:#282828;padding:10vh 0;" id="footer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-3">
+					<i class="fa fa-map-marker fa-2x red"></i>
+					<h4><a href="tel:7328002122">732-800-2122</a></h4>
+				</div>
+				<div class="col-sm-3">
+					<i class="fa fa-envelope-o fa-2x blue"></i>
+					<h4><a href="https://www.google.com/maps/place/4500+New+Brunswick+Ave,+Piscataway+Township,+NJ+08854/@40.5609666,-74.4372392,17z/data=!4m2!3m1!1s0x89c3b869d79cce13:0x5dcfd91b9153160a" target="_blank">4500 New Brunswick Ave</a></h4>
+				</div>
+				<div class="col-sm-3">
+					<i class="fa fa-phone fa-2x teal"></i>
+					<h4><a href="mailto:hello@sallchamps.com">hello@sallchamps.com</a></h4>
+				</div>
+				<div class="col-sm-3">
+					<h4><a href="https://www.facebook.com/STEM-Aspiring-Leaders-League-828774630491431" target="_blank"><i class="fa fa-facebook fa-3x fuchsia"></i></a></h4>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/formhandler.js"></script>
 	<script type="text/javascript" src="js/owl-carousel.js"></script>
 
 	<script>
-	var owlTestimonials = $("#owl-testimonials");
-	owlTestimonials.owlCarousel({
+
+	$("#owl-testimonials").owlCarousel({
 		items: 3,
 		navigation: false,
 		pagination: false,
 		stopOnHover: true,
-		autoPlay : 5000,
+		autoPlay : 5000
 	});
 
 // smooth scroll
@@ -218,22 +258,30 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 var isMobile = {
-    Android: function() { return navigator.userAgent.match(/Android/i); },
-    BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i); },
-    iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-    Opera: function() { return navigator.userAgent.match(/Opera Mini/i); },
-    Windows: function() { return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i); },
-    any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
+	Android: function() { return navigator.userAgent.match(/Android/i); },
+	BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i); },
+	iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
+	Opera: function() { return navigator.userAgent.match(/Opera Mini/i); },
+	Windows: function() { return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i); },
+	any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
 };
 
-if (isMobile.any()) {
-	$("#thecompetition").css("background-attachment", "scroll");
-	$("#contactus").css("background-attachment", "scroll");
-}
-
-var repeater = setInterval(scrollCheck, 50);
-
 // for form, fade in left first row, fade in right second row, kind of follow zerif lite format.
+
+var w = $(window);
+
+var navbar = $("#navbar");
+
+var opener = $("#opener");
+var openerContent = $("#opener > div");
+
+var subscribe = $("#subscribe");
+
+var thecompetition = $("#thecompetition");
+var thecompetitionHeader = $("#thecompetition-header");
+var thecompetition1 = $("#thecompetition1");
+var thecompetition2 = $("#thecompetition2");
+var thecompetition3 = $("#thecompetition3");
 
 var whoweare = $("#whoweare");
 var whoWeAreHeading = $("#whoweare-heading");
@@ -241,10 +289,67 @@ var whoWeAreContent = $("#whoweare-content");
 var whoWeAreLeft = $("#whoweare-left");
 var whoWeAreRight = $("#whoweare-right");
 
+var testimonials = $("#testimonials");
+var testimonialsContent = $("#testimonials-content");
+
+var contactus = $("#contactus");
+var contactHeading = $("#contact-heading");
+var contactusRow1 = $("#contact-row1");
+var contactusRow2 = $("#contact-row2");
+var contactusRow3 = $("#contact-row3");
+
 var footer = $("#footer");
 
+if (isMobile.any()) {
+	$("#thecompetition").css("background-attachment", "scroll");
+	$("#contactus").css("background-attachment", "scroll");
+
+	navbar.css("visibility", "visible");
+
+	opener.css("visibility", "visible");
+	openerContent.css("visibility", "visible");
+
+	subscribe.css("visibility", "visible");
+
+	thecompetitionHeader.css("visibility", "visible");
+	thecompetition1.css("visibility", "visible");
+	thecompetition2.css("visibility", "visible");
+	thecompetition3.css("visibility", "visible");	
+
+	whoWeAreHeading.css("visibility", "visible");
+	whoWeAreContent.css("visibility", "visible");
+	whoWeAreLeft.css("visibility", "visible");
+	whoWeAreRight.css("visibility", "visible");
+
+	testimonialsContent.css("visibility", "visible");
+
+	contactHeading.css("visibility", "visible");
+	contactusRow1.css("visibility", "visible");
+	contactusRow2.css("visibility", "visible");
+	contactusRow3.css("visibility", "visible");
+
+	footer.css("visibility", "visible");
+} else {
+	opener.css("visibility", "visible").addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		openerContent.css("visibility", "visible").addClass('animated fadeIn');
+		navbar.css("visibility", "visible").addClass('animated flipInX');
+	});
+	var repeater = setInterval(scrollCheck, 50);
+}
+
 function scrollCheck() {
-	console.log('hi');
+
+	if (isScrolledIntoView(subscribe)) {
+		subscribe.css("visibility", "visible").addClass('animated fadeIn');
+	}
+
+	if (isScrolledIntoView(thecompetition)) {
+		thecompetitionHeader.css("visibility", "visible").addClass('animated fadeIn');
+		thecompetition1.css("visibility", "visible").addClass('animated bounceInDown');
+		thecompetition2.css("visibility", "visible").addClass('animated bounceInDown');
+		thecompetition3.css("visibility", "visible").addClass('animated bounceInDown');
+	}
+
 	if (isScrolledIntoView(whoweare)) {
 		whoWeAreHeading.css("visibility", "visible").addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 			whoWeAreContent.css("visibility", "visible").addClass('animated fadeIn');
@@ -252,18 +357,65 @@ function scrollCheck() {
 		whoWeAreLeft.css("visibility", "visible").addClass('animated fadeInLeft');
 		whoWeAreRight.css("visibility", "visible").addClass('animated fadeInRight');
 	}
-	if (isScrolledIntoView(footer)) {
+
+	if (isScrolledIntoView(testimonials)) {
+		testimonialsContent.css("visibility", "visible").addClass('animated flipInX');
+	}
+
+	if (isScrolledIntoView(contactus)) {
+		contactHeading.css("visibility", "visible").addClass('animated fadeIn');
+		contactusRow1.css("visibility", "visible").addClass('animated fadeInLeft');
+		contactusRow2.css("visibility", "visible").addClass('animated fadeInRight');
+		contactusRow3.css("visibility", "visible").addClass('animated fadeInLeft');
+	}
+
+	if (scrollDone()) {
 		clearInterval(repeater);
 	}
+
 }
 
 // check if element is scrolled into view
 function isScrolledIntoView(elem) {
-	var $window = $(window);
-	var docViewBottom = $window.scrollTop() + $window.height();
+	var showLoc = w.scrollTop() + 61 + w.height()/2;
 	var elemTop = elem.offset().top;
-	return (elemTop <= docViewBottom);
+	return (elemTop <= showLoc);
 }
+
+function scrollDone() {
+	return (Math.round(footer.offset().top + footer.outerHeight()) == $(window).scrollTop() + $(window).height());
+}
+
+
+w.scroll(function() {
+
+	if (w.scrollTop() >= contactus.offset().top - 61) {
+		$("#thecompetition-nav").removeClass('active');
+		$("#whoweare-nav").removeClass('active');
+		$("#testimonials-nav").removeClass('active');
+		$("#contactus-nav").addClass('active');
+	} else if (w.scrollTop() >= testimonials.offset().top - 61) {
+		$("#thecompetition-nav").removeClass('active');
+		$("#whoweare-nav").removeClass('active');
+		$("#testimonials-nav").addClass('active');
+		$("#contactus-nav").removeClass('active');
+	} else if (w.scrollTop() >= whoweare.offset().top - 61) {
+		$("#thecompetition-nav").removeClass('active');
+		$("#whoweare-nav").addClass('active');
+		$("#testimonials-nav").removeClass('active');
+		$("#contactus-nav").removeClass('active');
+	} else if (w.scrollTop() >= thecompetition.offset().top - 61) {
+		$("#thecompetition-nav").addClass('active');
+		$("#whoweare-nav").removeClass('active');
+		$("#testimonials-nav").removeClass('active');
+		$("#contactus-nav").removeClass('active');
+	} else if (w.scrollTop() >= opener.offset().top - 61) {
+		$("#thecompetition-nav").removeClass('active');
+		$("#whoweare-nav").removeClass('active');
+		$("#testimonials-nav").removeClass('active');
+		$("#contactus-nav").removeClass('active');
+	}
+});
 
 
 </script>

@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
 
 var app = express();
 
@@ -16,12 +15,24 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
 app.use(express.static(path.join(__dirname, 'public')));
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 var router = express.Router();
 app.use(router);
 
 /* Routing */
 router.get('/', function(req, res, next) {
   res.render('index', {});
+});
+
+router.post('/subscribe', function (req, res) {
+  console.log(req.body);
+});
+
+router.post('/contact', function (req, res) {
+  console.log(req.body);
 });
 
 module.exports = app;
